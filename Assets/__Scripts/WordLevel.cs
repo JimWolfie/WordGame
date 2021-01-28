@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [System.Serializable]           // allows WordLevels to be edited in inspector
-public class Wordlevel {
+public class WordLevel {
 
     public int levelNum;
     public int longWordIndex;
@@ -31,7 +31,7 @@ public class Wordlevel {
     }
 
     // This static method checks whether word can be spelled with the chars in level.charDict
-    public static bool CheckWordInLevel(string str, Wordlevel level) {
+    public static bool CheckWordInLevel(string str, WordLevel level) {
         Dictionary<char, int> counts = new Dictionary<char, int>();
         for(int i = 0; i < str.Length; i++) {
             char c = str[i];

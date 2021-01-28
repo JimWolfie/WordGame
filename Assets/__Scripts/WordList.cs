@@ -77,8 +77,8 @@ public class WordList : MonoBehaviour
             }
 
             //If it's between wordLengthMin and wordLengthMax in length…
-            
-            if(word.Length>=wordLengthMin && word.Length <= wordLengthMax)
+
+            if (word.Length >= wordLengthMin && word.Length <= wordLengthMax)
             {
                 words.Add(word); //…then add it to the list of all valid words
             }

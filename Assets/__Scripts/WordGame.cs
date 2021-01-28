@@ -1,12 +1,7 @@
 ﻿using System.Collections;
-
 using System.Collections.Generic;
-
 using UnityEngine;
-
 using System.Linq;                                     // We'll be using LINQ
-
-
 
 public enum GameMode
 {
@@ -105,14 +100,7 @@ public class WordGame : MonoBehaviour
 
 
     // Called by the SendMessage() command from WordList
-
-    public void WordListParseComplete()
-    {
-
-        mode = GameMode.makeLevel;
-
-    }
-
+    
     public void WordListParseComplete()
     {
 
@@ -425,7 +413,7 @@ public class WordGame : MonoBehaviour
 
             lett.timeStart = Time.time + currLevel.subWords.Count * 0.05f;
 
-            lett.easingCuve = Easing.Sin + "-0.18"; // Bouncy easing
+            lett.easingCurve = Easing.Sin + "-0.18"; // Bouncy easing
 
 
 
@@ -838,10 +826,4 @@ public class WordGame : MonoBehaviour
         ArrangeBigLetters();       // Rearrange the Letters on screen
 
     }
-
-
-
-
-
-
 }
