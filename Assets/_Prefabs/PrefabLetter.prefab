@@ -205,3 +205,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c6b90453d5bdae54d8bfd15cd7e38b26, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  timeDuration: 0.5
+  easingCurve: ',InOut|'
+  tMesh: {fileID: 0}
+  tRend: {fileID: 0}
+  big: 0
+  pts: []
+  timeStart: -1
