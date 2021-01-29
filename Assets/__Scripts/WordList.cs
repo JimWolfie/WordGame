@@ -95,7 +95,7 @@ public class WordList : MonoBehaviour
 
                 // This yields execution until the next frame
 
-                yield return null; ;
+                yield return null; 
 
                 //The yield will cause the execution of this method to wait
                 //here while other code executes and then continue from this

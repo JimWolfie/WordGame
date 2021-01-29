@@ -114,7 +114,7 @@ public class WordGame : MonoBehaviour
 
 
 
-    public WordLevel MakeWordLevel(int levelNum = -1)
+    public WordLevel MakeWordLevel(int levelNum =-1)
     {                      // a
 
         WordLevel level = new WordLevel();
@@ -310,14 +310,14 @@ public class WordGame : MonoBehaviour
 
                 // Position the Letter
 
-                pos = new Vector3(wordArea.x + left + j * letterSize, wordArea.y, 0);
+                pos = new Vector3(wordArea.x + left + j*letterSize, wordArea.y, 0);
 
 
 
 
                 // The % here makes multiple columns line up
 
-                pos.y -= (i % numRows) * letterSize;
+                pos.y -= (i%numRows) * letterSize;
 
                 // Move the lett immediately to a position above the screen
 
@@ -360,7 +360,7 @@ public class WordGame : MonoBehaviour
 
             // If we've gotten to the numRows(th) row, start a new column
 
-            if (i % numRows == numRows - 1)
+            if (i%numRows == numRows-1)
             {
 
                 left += (columnWidth + 0.5f) * letterSize;
@@ -797,7 +797,7 @@ public class WordGame : MonoBehaviour
 
         // Lighten its color
 
-        wyrds[ndx].color = (wyrds[ndx].color + Color.white) / 2f;
+        wyrds[ndx].color = (wyrds[ndx].color + Color.white)/2f;
 
         wyrds[ndx].visible = true; // Make its 3D Text visible
 
